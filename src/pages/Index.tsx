@@ -14,8 +14,8 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <Icon name="Scissors" size={24} className="text-primary" />
+            <div className="flex items-center gap-3">
+              <img src="https://cdn.poehali.dev/files/c1099452-9b42-4bbe-ba4e-9bfd38a35bf2.jpg" alt="GURU" className="h-10 w-auto" />
               <span className="font-semibold text-lg">Барбер-Психолог</span>
             </div>
             <div className="hidden md:flex items-center gap-6">
@@ -38,7 +38,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                Вырастить себя
+                Барбер-сеанс
               </h1>
               <p className="text-2xl md:text-3xl text-muted-foreground mb-6 font-medium">
                 Мужской стиль и уход + психологическая консультация
@@ -271,12 +271,21 @@ const Index = () => {
             О мастере — Михаиле Присяжникове
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="relative">
-              <img 
-                src="https://cdn.poehali.dev/projects/ee7cdf1c-a7af-40cb-9ff8-4f4bfc130cc5/files/11fd1f98-8493-4d1a-98c5-49acd06b6c5c.jpg" 
-                alt="Михаил Присяжников"
-                className="rounded-2xl shadow-xl w-full object-cover"
-              />
+            <div className="space-y-6">
+              <div className="relative">
+                <img 
+                  src="https://cdn.poehali.dev/files/8c90242d-6ffb-49c3-9b96-32453cbcdcdf.jpg" 
+                  alt="Михаил Присяжников"
+                  className="rounded-2xl shadow-xl w-full object-cover"
+                />
+              </div>
+              <div className="relative">
+                <img 
+                  src="https://cdn.poehali.dev/files/51ca1ee9-1731-4554-9ae9-b98b63336298.jpg" 
+                  alt="Диплом педагога-психолога"
+                  className="rounded-2xl shadow-xl w-full object-cover"
+                />
+              </div>
             </div>
             <div className="space-y-6">
               <div>
@@ -489,12 +498,22 @@ const Index = () => {
         </div>
       </section>
 
+      <a 
+        href="https://t.me/misha_prisyaga" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-accent hover:bg-accent/90 text-white rounded-full p-4 shadow-2xl hover:scale-110 transition-transform duration-300"
+        aria-label="Написать в Telegram"
+      >
+        <Icon name="Send" size={32} />
+      </a>
+
       <footer className="py-12 px-4 bg-primary text-primary-foreground">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Icon name="Scissors" size={24} />
+              <div className="flex items-center gap-3 mb-4">
+                <img src="https://cdn.poehali.dev/files/c1099452-9b42-4bbe-ba4e-9bfd38a35bf2.jpg" alt="GURU" className="h-10 w-auto" />
                 <span className="font-semibold text-lg">Барбер-Психолог</span>
               </div>
               <p className="text-sm opacity-90">
